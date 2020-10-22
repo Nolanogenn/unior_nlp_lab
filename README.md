@@ -36,12 +36,12 @@ Each blog is presented as a separate file, the name of which indicates a blogger
 I make no claim on ownership of these files, nor do I necessarily endorse the jokes in them. This dataset is provided for research purposes (see License section below).
 
 ---
-## Tedesco <a name="tedesco"></a> \
+## Tedesco <a name="tedesco"></a> 
 1.[German Political Speeches Corpus and Visualization](http://adrien.barbaresi.eu/corpora/speeches/)
 **Descrizione:** This text archive focuses on German political speeches held by top officials mostly from 1990 onwards, selected according to their political relevance. 
 
 ---
 
-## Multilingue <a name="multilingue"></a> \
+## Multilingue <a name="multilingue"></a> 
 1. [Europarl](http://statmt.org/europarl/) \
 **Descrizione:** The Europarl parallel corpus is extracted from the proceedings of the European Parliament. It includes versions in 21 European languages: Romanic (French, Italian, Spanish, Portuguese, Romanian), Germanic (English, Dutch, German, Danish, Swedish), Slavik (Bulgarian, Czech, Polish, Slovak, Slovene), Finni-Ugric (Finnish, Hungarian, Estonian), Baltic (Latvian, Lithuanian), and Greek.
