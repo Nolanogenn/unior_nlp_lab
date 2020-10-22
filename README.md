@@ -2,8 +2,9 @@
 # Database Disponibili
 
 1. [Inglese](#inglese)
-2. [Tedesco](#tedesco)
-3. [Italiano](#paragraph2)
+2. [Italiano](#italiano)
+3. [Tedesco](#tedesco)
+4. [Russo] (#russo)
 4. [Multilingue](#multilingue)
 
 ## Inglese <a name="inglese"></a>
@@ -36,12 +37,34 @@ Each blog is presented as a separate file, the name of which indicates a blogger
 I make no claim on ownership of these files, nor do I necessarily endorse the jokes in them. This dataset is provided for research purposes (see License section below).
 
 ---
+
+## Italiano <a name="italiano"></a>
+
+1. [Hottest Italian Tweets](https://data.world/ondata/open-data-twitter-hot-posts/workspace/query?queryid=b409249c-17b8-4ccd-9166-dc3cf77f317d) \
+An archive of the Twitter posts about open data with at least 10 retweets or 10 favorites
+**NB SERVE LOGGARE CON GOOGLE PER SCARICARLO**
+
+
+
+
+---
 ## Tedesco <a name="tedesco"></a> 
-1.[German Political Speeches Corpus and Visualization](http://adrien.barbaresi.eu/corpora/speeches/)
+1.[German Political Speeches Corpus and Visualization](http://adrien.barbaresi.eu/corpora/speeches/)\
 **Descrizione:** This text archive focuses on German political speeches held by top officials mostly from 1990 onwards, selected according to their political relevance. 
 
+---
+## Russo <a name="russo"></a>
+1. [Russian Twitter Corpus](http://study.mokoron.com/) \
+The corpus of short texts in Russian on the basis of Twitter posts. Suitable for training a language model for social media or for short texts, training classifiers for sentiment analysis and text toxicity. \
+**NB: SCARICARE SOLO POSITIVI/NEGATIVI**
 ---
 
 ## Multilingue <a name="multilingue"></a> 
 1. [Europarl](http://statmt.org/europarl/) \
 **Descrizione:** The Europarl parallel corpus is extracted from the proceedings of the European Parliament. It includes versions in 21 European languages: Romanic (French, Italian, Spanish, Portuguese, Romanian), Germanic (English, Dutch, German, Danish, Swedish), Slavik (Bulgarian, Czech, Polish, Slovak, Slovene), Finni-Ugric (Finnish, Hungarian, Estonian), Baltic (Latvian, Lithuanian), and Greek.
+
+2. [German-English_WordAlignment](https://github.com/bicici/SMTData/blob/master/German-English_WordAlignment.zip) \
+**Descrizione:** A set of manually aligned datasets in German, English and Turkish.
+
+3. [Japanese-English Bilingual Corpus](https://www.kaggle.com/team-ai/japaneseenglish-bilingual-corpus?select=readme.pdf) \
+**Descrizione:** A precise and large-scale corpus containing about 500,000 pairs of manually-translated sentences. 
