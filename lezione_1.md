@@ -2,6 +2,31 @@
 
 ## Cos'è NLP?
 
+Con **Natural Language Processing** s'intede la dottrina che comprende linguistica, informatica e machine learning. L'attenzione di base è far sì che le macchine capiscano il linguaggio umano / che il linguaggio umano possa essere analizzato da una macchina. Perché? Perché la potenza di calcolo di una macchina è ben superiore alla potenza di calcolo di qualunque essere umano. Per tal motivo una macchina può compiere azioni su un numero di dati estremamente elevato. Tali azioni possono essere ripetute, e possono avvenire in remoto. \
+Gli sviluppi in NLP hanno permesso lo sviluppo di una serie di applicazioni pratiche molto utili nella vita quotidiana:
+
+- Correzione automatica
+- MT
+- Sentiment Analysis
+- QA / Chatbot
+- Filtri Spam
+
+Nella pratica, ognuna di queste applicazioni può essere suddivisa in quelli che definiamo ***task*** più piccoli e definiti. Una prima divisione principale viene solitamente fatta tra **Natural Language Understanding** e **Natural Language Generation**, ma, scendendo più nello speficifico, si possono definire una serie di ***task*** legati a diversi aspetti linguistici:
+
+- tokenizzazione
+- lemmatizzazione
+- calcolo della Minimum Edit Distance
+- ngrams
+- language models
+- classificatori
+- parsing
+- text
+- speech recognition
+- named entity recognition
+...
+
+Nello specifico, questi ***task*** vengono risolti attraverso l'uso del computer. In particolare, lo stato dell'arte tende a preferire l'uso del linguaggio di programmazione Python.
+
 ## Elementi fondamentali
 
 - token
@@ -12,6 +37,8 @@
 ## Intro Python
 
 ### Installazione
+
+Vedi la guida all'installazione di Python.
 
 ### "Hello World"
 
