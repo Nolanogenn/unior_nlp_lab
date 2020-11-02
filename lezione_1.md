@@ -1,6 +1,6 @@
 # Intro al corso
 
-## Cos'è NLP?
+## NLP?
 
 Con **Natural Language Processing** s'intede la dottrina che comprende linguistica, informatica e machine learning. L'attenzione di base è far sì che le macchine capiscano il linguaggio umano / che il linguaggio umano possa essere analizzato da una macchina. Perché? Perché la potenza di calcolo di una macchina è ben superiore alla potenza di calcolo di qualunque essere umano. Per tal motivo una macchina può compiere azioni su un numero di dati estremamente elevato. Tali azioni possono essere ripetute, e possono avvenire in remoto. \
 Gli sviluppi in NLP hanno permesso lo sviluppo di una serie di applicazioni pratiche molto utili nella vita quotidiana:
