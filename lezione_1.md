@@ -76,6 +76,9 @@ print(variabile_non_esistente)
 x = 4
 y = 4.0
 
+
+###CONDIZIONI LOGICHE
+
 print(x == y)
 print(x != y)
 print(x < y)
