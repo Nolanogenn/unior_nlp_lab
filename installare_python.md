@@ -37,7 +37,7 @@ per scaricare le librerie su Python. Aspettare che finisca l'installazione.
 
 Questo strumento è utile per testare piccole parti di codice, ma non permette di salvare o modificare il codice.
 
-# Creare un foglio
+# Creare un foglio Notebook su cui lavorare
 
 1. Aprire il menù **Start** e scrivi nella barra della ricerca **cmd**. Aprire **Prompt dei Comandi**
 2. Srivere **jupyter lab** e premere Invio
