@@ -164,7 +164,8 @@ print(x is y)
   
   print("Per me si va ne la città dolente \n
           per me si va ne l'etterno dolore")
-     
+   
+  print("Gli spazi\tsono importante") 
   
   caps = "QUESTA FRASE è IN CAPS"
   print(caps.lower())
