@@ -21,6 +21,10 @@ Una volta fatto questo, come prima scrivere **pip -V** e premere invio. Dovrebbe
 
 Se è andato tutto come previsto, ben fatto! Manca un ultimo passaggio: installare JupyterLab. Questo strumento permette di avere un'interfaccia grafica
 quando si usa Python, rendendo il lavoro più intuitivo.
+
 C'è però prima bisogno di scaricare **Microsoft Visual C++ 14.0**, scaricabile dal link https://go.microsoft.com/fwlink/?LinkId=691126. Far partire il file scaricato e aspettare finisca.
+
 In seguito, dal **Prompt dei Comandi**, scrivere il comando **pip install jupyterlab**. Questo comando tornerà molto utile in futuro, perché è il comando necessario
 per scaricare le librerie su Python. Aspettare che finisca l'installazione.
+
+**Ben fatto!**
