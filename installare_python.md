@@ -9,7 +9,7 @@
 
 Per testare se l'installazione è andata a buon fine:
 1. Aprire il menù **Start** e scrivi nella barra della ricerca **cmd**. Aprire **Prompt dei Comandi**
-2. Scrivere **py** e premere invio
+2. Scrivere **py** e premere Invio
 3. Dovrebbe comparire la schermata mostrata di seguito:
 ![](https://i.ibb.co/827SRZK/py-successful.png)
 
@@ -29,4 +29,18 @@ per scaricare le librerie su Python. Aspettare che finisca l'installazione.
 
 **Ben fatto!**
 
-# Aprire un foglio Python
+# Testare i codici
+
+1. Aprire il menù **Start** e scrivi nella barra della ricerca **cmd**. Aprire **Prompt dei Comandi**
+2. Scrivere **py** e premere Invio
+3. Benvenuto/a in Python!
+
+Questo strumento è utile per testare piccole parti di codice, ma non permette di salvare o modificare il codice.
+
+# Creare un foglio
+
+1. Aprire il menù **Start** e scrivi nella barra della ricerca **cmd**. Aprire **Prompt dei Comandi**
+2. Srivere **jupyter lab** e premere Invio
+3. Creare un **notebook** Python 3
+
+Oltre a offrire un'interfaccia grafica, JupyterLab permette di salvare il codice e di modificarlo in caso di errori. 
