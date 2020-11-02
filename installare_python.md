@@ -28,3 +28,5 @@ In seguito, dal **Prompt dei Comandi**, scrivere il comando **pip install jupyte
 per scaricare le librerie su Python. Aspettare che finisca l'installazione.
 
 **Ben fatto!**
+
+# Aprire un foglio Python
