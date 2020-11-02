@@ -28,11 +28,11 @@ Each blog is presented as a separate file, the name of which indicates a blogger
     - gender (for 3,774 characters)
     - position on movie credits (3,321 characters)
 
- 3. [Elsevier OA CC-BY Corpus](https://data.mendeley.com/datasets/zm33cdndxs/2) \
+3. [Elsevier OA CC-BY Corpus](https://data.mendeley.com/datasets/zm33cdndxs/2) \
  **Descrizione:** This is a corpus of 40k (40,001) open access (OA) CC-BY articles from across Elsevier’s journals represent the first cross-discipline research of data at this scale to support NLP and ML research.
  
 
- 4. [A dataset of English plaintext jokes](https://github.com/taivop/joke-dataset) \
+4. [A dataset of English plaintext jokes](https://github.com/taivop/joke-dataset) \
  **Descrizione:** There are about 208 000 jokes in this database scraped from three sources.\
 I make no claim on ownership of these files, nor do I necessarily endorse the jokes in them. This dataset is provided for research purposes (see License section below).
 
@@ -49,21 +49,22 @@ An archive of the Twitter posts about open data with at least 10 retweets or 10 
 **NB SERVE LOGGARE CON GOOGLE PER SCARICARLO**
 
 
-
-
 ---
-## Tedesco <a name="tedesco"></a> 
-1.[German Political Speeches Corpus and Visualization](http://adrien.barbaresi.eu/corpora/speeches/)\
+## Tedesco <a name="tedesco"></a>
+
+1. [German Political Speeches Corpus and Visualization](http://adrien.barbaresi.eu/corpora/speeches/)\
 **Descrizione:** This text archive focuses on German political speeches held by top officials mostly from 1990 onwards, selected according to their political relevance. 
 
 ---
 ## Russo <a name="russo"></a>
+
 1. [Russian Twitter Corpus](http://study.mokoron.com/) \
 The corpus of short texts in Russian on the basis of Twitter posts. Suitable for training a language model for social media or for short texts, training classifiers for sentiment analysis and text toxicity. \
 **NB: SCARICARE SOLO POSITIVI/NEGATIVI**
 ---
 
 ## Multilingue <a name="multilingue"></a> 
+
 1. [Europarl](http://statmt.org/europarl/) \
 **Descrizione:** The Europarl parallel corpus is extracted from the proceedings of the European Parliament. It includes versions in 21 European languages: Romanic (French, Italian, Spanish, Portuguese, Romanian), Germanic (English, Dutch, German, Danish, Swedish), Slavik (Bulgarian, Czech, Polish, Slovak, Slovene), Finni-Ugric (Finnish, Hungarian, Estonian), Baltic (Latvian, Lithuanian), and Greek.
 
