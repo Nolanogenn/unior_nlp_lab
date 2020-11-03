@@ -41,6 +41,7 @@ Questo strumento è utile per testare piccole parti di codice, ma non permette d
 
 1. Aprire il menù **Start** e scrivi nella barra della ricerca **cmd**. Aprire **Prompt dei Comandi**
 2. Srivere **jupyter lab** e premere Invio
-3. Creare un **notebook** Python 3
+3. Appariranno molte scritte. Cercare l'url che inizia con **http://localhost:8888/** e andare all'indirizzo segnato
+4. Creare un **notebook** Python 3
 
 Oltre a offrire un'interfaccia grafica, JupyterLab permette di salvare il codice e di modificarlo in caso di errori. 
