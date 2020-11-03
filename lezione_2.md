@@ -19,7 +19,7 @@ spend,1,0,1,0,0,0,0,0
 ```
 L'aspetto positivo dei **csv** è la loro facilità di creazione e la possibilità, che offrono, di poter essere utilizzati in diverse applicazioni e linguaggi di programmazione (ad esempio Python e sql). In realtà il nome è fuorviante perché il separatore (di base una virgola) può in realtà essere qualunque altro simbolo. A volte si trova il punto e virgola, o **quattro spazi** (ovvero un **tab**, simboleggiato da "\t"). In quest'ultimo caso si parla solitamente di **tsv**. 
 
-Esistono diversi modi di interpretare un file **csv** su Python (noi useremo la libreria *Pandas*), ma l'idea è generalmente di avere di fronte una **matrice**, dove per matrice s'intende una *lista di liste della stessa lunghezza*
+Esistono diversi modi di interpretare un file **csv** su Python (noi useremo la libreria *Pandas*), ma l'idea è generalmente di avere di fronte una **matrice nxn**, ovvero una *lista di liste tutte della stessa lunghezza*
 
 ```python
 
