@@ -150,6 +150,8 @@ Un file **.json** è strutturalmente un dizionario:
          "id":43161,
          "name":"Theodore Roosevelt"
       }
+
+]
 }
 ```
 
