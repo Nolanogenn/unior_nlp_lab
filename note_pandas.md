@@ -68,19 +68,18 @@ df.loc[df[k].str.contains(re, regex=True)]
 
 ## Conditional Changes
 
-Df.loc[df[k] == y, k] = j
-Trasforma tutti i casi in cui k = y in j
+```python
+df.loc[df[k] == y, k] = j #trasforma tutti i casi in cui k = y in j
 
-Df.loc[df[k] == y, [z,x]] = [1,2]
-Se nella riga k == y, z diventa 1 e x diventa 2
-
+df.loc[df[k] == y, [z,x]] = [1,2] #se nella riga k == y => z diventa 1 e x diventa 2
+```
 
 ## Aggregate Statistics (Groupby)
 
-
+```python
 df.groupby([k]).mean() #trova le medie dei valori delle colonne raggruppando le righe per k
 df.groupby([k]).mean().sort_values(x, ascending=False)
 
 df.groupby([k,x]).count()[k] #conta le combinazioni dei valori delle colonne k e x
-
+```
 
