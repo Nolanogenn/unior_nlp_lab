@@ -45,4 +45,87 @@ import numpy as np
 ```
 Ma ciò non toglie che è possibile importare una libreria utilizzando un *alias* arbitrario. Questo significa anche che dobbiamo stare attenti agli *alias* scelti!
 In questa lezione vedremo i comandi relativi alle due librerie **json** e **pandas** per importare database.
+**NB: creare notebook su cui testare i comandi successivi**
 
+# Pandas
+
+Pandas è la libreria generalmente utilizzata per lavorare con i csv. Quando si lavora con Pandas, queste tabelle prendono il nome di *dataframe*.\
+Nel file *note_pandas.md* ci sono diversi comandi utili che pandas permette di utilizzare. In questa lezione ne vedremo i principali. \
+Scaricare il file *graduate_data_6 città.csv* presente nella cartella principale del corso:
+1. Cliccare sul file
+2. Cliccare su download
+3. Una volta aperto il file testuale, cliccare con il tasto destro e *scaricare come*
+
+Una volta scaricato il file, eseguire il comando seguente da notebook:
+```python
+import pandas as pd
+
+df = pd.read_csv('path')
+```
+Dove per *path* si intende il *percorso del file che vogliamo caricare **relativo alla cartella in cui stiamo lavorando**. \
+Ci sono diversi modi di esplorare il file che abbiamo appena caricato
+```python
+df.columns() #stampa il nome delle colonne del csv
+df.head(n) #stampa le prime n righe del csv
+df.tail(n) #stampa le ultime n righe del csv
+```
+Nel csv che abbiamo caricato, ad esempio, le colonne sono: *tweet_id,permalink,username,text,date,num_rt,num_favs,num_mentions,num_hashtags,tweet_loc,mentioned_locs,verified,user_description* \
+Se vogliamo sapere esattamente cosa riguarda una determinata colonna, possiamo usare il comando
+```python
+df['tweet_id'] #stampa la colonna 'tweet_id'
+```
+Prima di esplorare una colonna però è necessaria renderla in forma di lista
+```python
+x = list(df['tweet_id']) 
+```
+Possiamo inoltre esplorare le righe attraverso il comando
+```python
+df.iloc(n) #stampa la nesima riga
+df.iloc(n,m) #stampa la mesima colonna della nesima riga
+
+df.loc[df['column_name']==y] #stampa tutte le righe in cui la colonna 'column_name' assume il valore y
+```
+Se volessimo creare un nuovo dataframe da zero, in cui abbiamo i seguenti dati:
+| matricola  |nome   |cognome   |voto|
+|---|---|---|---|
+|  mts00235  |gennaro   |nolano   |30L   | 
+| mc00523  | maria  | esposito  | 19  | 
+| mts0001  |giampiero   |altrui   |26   | 
+Avremmo quattro colonne (matricola, nome, cognome, voto) e tre righe di dati. Un modo per creare un dataframe di questo tipo è utilizzando il seguente codice:
+```python
+df = [['matricola','nome','cognome','voto],
+["mts00235","gennaro","nolano",33],
+["mc00523","maria","esposito",19],
+["mts0001","giampiero","altrui",26]
+]
+
+df = pd.DataFrame(df) #in questo caso il dataframe creato userà la prima riga come colonne
+print(df.columns())
+
+#Una seconda soluzione possibile
+df = [["mts00235","gennaro","nolano",33],
+["mc00523","maria","esposito",19],
+["mts0001","giampiero","altrui",26]
+]
+
+df = pd.DataFrame(df, columns=['matricola','nome','cognome','voto])
+print(df.columns())
+```
+Il dataframe può successivamente essere salvato con il codice
+```python
+df.to_csv('path')
+```
+Dove, ancora una volta, *path* sta per il percorso dove si vuole salvare il file.
+
+# Json
+
+Come già detto in precedenza, un file **json** funziona alla stessa maniera di un dizionario su python. Per fare dei test scaricare il file *clean_data_wcitta_week6.json* dalla cartella principale del corso seguendo le stesse istruzioni utilizzate per scaricare il file csv. \
+Il comando per caricare il file sul codice è però diverso in questo caso:
+
+```python
+import json
+
+with open('path') as infile:
+  prova_json = json.load(infile)
+```
+Una volta importato in questa forma, 
