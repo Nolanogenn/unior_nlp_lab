@@ -2,8 +2,9 @@
 
 ## NLP?
 
-Con **Natural Language Processing** s'intede la dottrina che comprende linguistica, informatica e machine learning. L'attenzione di base è far sì che le macchine capiscano il linguaggio umano / che il linguaggio umano possa essere analizzato da una macchina. Perché? Perché la potenza di calcolo di una macchina è ben superiore alla potenza di calcolo di qualunque essere umano. Per tal motivo una macchina può compiere azioni su un numero di dati estremamente elevato. Tali azioni possono essere ripetute, e possono avvenire in remoto. \
-Gli sviluppi in NLP hanno permesso lo sviluppo di una serie di applicazioni pratiche molto utili nella vita quotidiana:
+Con **Natural Language Processing** s'intede la dottrina che comprende linguistica, informatica e machine learning che ha, come obiettivo principale, far sì che le macchine capiscano il linguaggio umano, ovvero che il linguaggio umano possa essere analizzato automaticamente da una macchina. Perché?\
+Perché la potenza di calcolo di una macchina è ben superiore alla potenza di calcolo di qualunque essere umano e può quindi compiere azioni su un numero di dati estremamente elevato. Tali azioni, inoltre, possono essere ripetute (teoricamente all'infinito) senza perdita di dati, e possono avvenire in remoto. \
+La ricerca in ambito NLP ha permesso lo sviluppo di una serie di applicazioni pratiche che trovano utilizzo nella vita quotidiana:
 
 - Correzione automatica
 - MT
@@ -11,11 +12,11 @@ Gli sviluppi in NLP hanno permesso lo sviluppo di una serie di applicazioni prat
 - QA / Chatbot
 - Filtri Spam
 
-Nella pratica, ognuna di queste applicazioni può essere suddivisa in quelli che definiamo ***task*** più piccoli e definiti. Una prima divisione principale viene solitamente fatta tra **Natural Language Understanding** e **Natural Language Generation**, ma, scendendo più nello speficifico, si possono definire una serie di ***task*** legati a diversi aspetti linguistici:
+Nella pratica, ognuna di queste applicazioni può essere suddivisa in quelli che definiamo ***task***, ovvero problemi più piccoli e meglio definiti. Due task principali in cui si snoda tutto l'NLP sono il **Natural Language Understanding** e **Natural Language Generation**, ma, scendendo più nello speficifico, si possono definire una serie di ***task*** legati a diversi aspetti linguistici, come:
 
 - tokenizzazione
 - lemmatizzazione
-- calcolo della Minimum Edit Distance
+- Minimum Edit Distance
 - ngrams
 - language models
 - classificatori
@@ -25,20 +26,19 @@ Nella pratica, ognuna di queste applicazioni può essere suddivisa in quelli che
 - named entity recognition
 ...
 
-Nello specifico, questi ***task*** vengono risolti attraverso l'uso del computer. In particolare, lo stato dell'arte tende a preferire l'uso del linguaggio di programmazione Python.
+Nonostante questi **task** possano essere risolti a mano, è molto più comodo ed efficiente risolverli utilizzando un computer. L'esistenza di molti software / servizi in cloud permette inoltre di affrontare questi problemi anche senza determiante conoscenze informatiche, ma l'utilizzo di linguaggi di programmazione ci offre maggiore libertà nei progetti. \
+Ovviamente, il prezzo da pagare è che bisogna imparare a utilizzare gli strumenti a nostra disposizione, non solo per quanto riguarda la teoria ma anche praticamente. In particolare, in questo corso ci soffermeremo sul linguaggio di programmazione **Python**, che viene solitamente usato allo stato dell'arte.
 
-## Elementi fondamentali
+## Elementi fondamentali di NLP
 
 Su quali dati lavoriamo? Si tratta di dati linguistici, raccolti in un **corpus**, o in più **corpora**. I **corpora** possono essere di diverso tipo (monolingue, multilingue, paralleli...) e trattano gli argomenti più svariati. \
 Un corpus è solitamente composto da più frasi. Le frasi possono essere delimitate da segnalatori, come **<s>...</s>** o **<START>...<FINISH>**. Ogni frase è composta da più parole. Ma come si distinguono le parole? \
-È accettata la concezione che la parola venga definita come la **stringa tra due spazi**. Questo è il modo migliore per permettere a una macchina di comprendere il concetto di parola. Sotto questa forma, solitamente non si parla di parole ma di **token**. Si parla inoltre di **type** per indicare il numero di token diversi presenti in un corpus.
-Un corpus è quindi descritto come avente **N token** e un vocabolario composto da **V token**.\
-  La relazione tra V e N è definita **legge di Herdan** o **di Heaps** (il primo la scoprì riguardo la linguistica, il secondo riguardo l'information retrieval), la quale dice che
-```
-  |V| = kN^B
-```
+È accettata la concezione che la parola venga definita come la **stringa tra due spazi**. Questo è il modo migliore per permettere a una macchina di comprendere il concetto di parola. Sotto questa forma, solitamente non si parla di parole ma di **token**. Si parla inoltre di **type** per indicare il numero di token diversi presenti in un corpus. \
+Questa definizione va bene per le lingue che usano gli spazi per dividere le parole, ma per quelle che non rientrano in questa categoria (ad esempio cinese e giapponese) servono algoritmi molto più complessi. Nel nostro caso questa definizione ci basta. \
+Un corpus è quindi descritto come avente **N token** e un vocabolario composto da **V type**.\
 Un corpus può inoltre essere descritto dal numero di **lemmi** (ovvero la forma che compare nel dizionario di una determinata parola). \
-Un problema fondamentale nel creare un corpus è quello della **normalizzazione del testo**, ovvero della 'fissazione' delle caratteristiche di un testo affinché esso sia unitario. In generale, è la prima vera parte di processamento del testo, e comprende generalmente tre fasi/task:
+Un problema fondamentale nel creare un corpus è quello della **normalizzazione del testo**, ovvero della 'fissazione' delle caratteristiche di un testo affinché esso sia considerabile unitario nel suo complesso. \
+  In generale, la **normalizzazione** è la prima vera parte di processamento del testo, e comprende generalmente tre fasi/task:
   1. Tokenizzazione
   2. Normalizzazione delle parole
   3. Segmentazione delle frasi
