@@ -258,7 +258,8 @@ lista_marco = [170, 22, "m", None]
 
 print(persona_marco[0] > persona_anna[0])
 
-#in questo caso abbiamo solo due oggetti e quattro caratteristiche, per cui è ancora abbastanza facile ricordare quale ordine nella lista corrisponde a quale caratteristica
+#in questo caso abbiamo solo due oggetti e quattro caratteristiche, 
+#per cui è ancora abbastanza facile ricordare quale ordine nella lista corrisponde a quale caratteristica
 #ma nel caso di più caratteristiche e più oggetti diventa più complicato tenere il passo
 #è meglio avere un tipo di dato indicizzato, ovvero che permette di estrapolare determinate caratteristiche sulla base di un indice
 
@@ -274,17 +275,18 @@ dizionario_marco = {"altezza" = 170,
 }
 
 print(dizionario_anna['altezza'] == dizionario_marco['altezza'])
+```
+La struttura di un dizionario comprende quindi **chiavi** (**keys**) e **valori** (**values**), dove le **chiavi** sono gli elementi a sinistra delle assegnazioni e i #**valori** gli elementi a destra.\
+Per ogni **chiave** si può avere **un unico valore** e le **chiavi** non possono ripetersi.\
+Un **valore** può essere rappresentato da un qualunque tipo di dato.
+```python
 
-#la struttura di un dizionario comprende quindi **chiavi** (**keys**) e **valori** (**values**), dove le **chiavi** sono gli elementi a sinistra delle assegnazioni e i #**valori** gli elementi a destra
-#per ogni **chiave** si può avere **un unico valore** e le **chiavi** non possono ripetersi
-#un **valore** può essere rappresentato da un qualunque tipo di dato
-
-dizioario_dati = {"stringa"="test",
-"int" = 7357,
-"list" = ['t', 'e', 's', 't'],
-"dict" = {"stringa"="test",
-"int" = 7357,
-"list" = ['t', 'e', 's', 't']}
+dizioario_dati = {"stringa" : "test",
+"int" : 7357,
+"list" : ['t', 'e', 's', 't'],
+"dict" : {"stringa" : "test",
+"int" : 7357,
+"list" : ['t', 'e', 's', 't']}
 }
 
 print(dizionario_dati['dict']['int'])
