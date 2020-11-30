@@ -128,4 +128,16 @@ import json
 with open('path') as infile:
   prova_json = json.load(infile)
 ```
-Una volta importato in questa forma, 
+Una volta importato in questa forma, il file è accessibile utilizzando la variabile che gli è stata affibbiata.
+
+Possiamo poi salvare il file:
+```python
+with open('path', 'w') as outfile:
+  json.dump(prova_json, outfile)
+ 
+#notare bene la dicitira 'w+', che è un'opzione del comando 'open', che crea direttamente un file vuoto dal nome selezionato
+```
+Una volta importato, un file json è utilizzabile sostanzialmente come se fosse un dizionario. È importante quindi prima di tutto esplorarlo con
+```python
+prova_json.keys()
+```
