@@ -7,7 +7,7 @@ Come per le altre librerie utilizzate, abbiamo bisogno innanzitutto di installar
 pip install nltk
 ```
 E poi importarla su python
-```
+```python
 import nltk
 ```
 
