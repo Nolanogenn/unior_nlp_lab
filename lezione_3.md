@@ -90,7 +90,9 @@ Se volessimo creare un nuovo dataframe da zero, in cui abbiamo i seguenti dati:
 |---|---|---|---|
 |  mts00235  |gennaro   |nolano   |30L   | 
 | mc00523  | maria  | esposito  | 19  | 
-| mts0001  |giampiero   |altrui   |26   | 
+| mts0001  |giampiero   |altrui   |26   |
+
+
 Avremmo quattro colonne (matricola, nome, cognome, voto) e tre righe di dati. Un modo per creare un dataframe di questo tipo è utilizzando il seguente codice:
 ```python
 df = [['matricola','nome','cognome','voto],
