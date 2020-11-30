@@ -174,3 +174,48 @@ print(x is y)
   print(caps.lower())
   
   ```
+
+### Aprire e salvare file testuali 
+
+Nel caso ci trovassimo a lavorare con file in formato .txt, possiamo aprirli su python utilizzando il comando
+
+```python
+f = open("path", 'r')
+file_txt = f.read()
+```
+Dove "path" è il percorso dove si trova il file (rispetto alla cartella in cui ci troviamo). Se quindi siamo già nella cartella in cui si trova il file, ci basterà inserire il nome di quest'ultimo.
+
+Una volta caricato in questo modo, il file viene trattato come se fosse una stringa. Ma questo non è sempre l'ideale, a volte è preferibile caricare il file diviso già per righe. Ad esempio, ogni riga potrebbe essere una frase che vogliamo analizzare separatamente. In questo caso il codice sarà:
+
+```python
+f = open("path", "r")
+file_txt = f.readlines()
+```
+
+In questo caso il file verrà importato sotto forma di lista. Questa differenza nei modi di importare un file testuale diventa inoltre importante nel momento in cui vogliamo salvare un file. Il codice generico per salvare una stringa è:
+
+```python
+text_prova = "Ho perso la penna. La penna mi è caduta."
+with open("path", "w") as f:
+  f.write(text_prova)
+```
+Questo codice non farà altro che creare un file testuale in "path" e scrivere al suo interno le frasi "Ho perso la penna. La penna mi è caduta.". A volte ci basta questo processo, se non ci interessa mantenere una divisione in frasi per un'analisi successiva. Se invece volessimo salvare una lista di frasi in formato testuale, il codice da usare sarebbe il seguente:
+```python
+lista_frasi = ['Ho perso la penna.', 'La penna mi è caduta.']
+with open("path", "w") as f:
+  for frase in lista_frasi:
+    f.write(frase)
+    f.write('\n')
+```
+Questo codice:
+1. Apre un file bianco in "path";
+2. Fa un loop di tutte le frasi nella lista che abbiamo scelto (vedremo nella prossima lezione come funzionano i loop);
+3. Scrive la frase nel file in "path";
+4. Alla fine della frase scrive '\n' (ovvero l'accapo in forma testuale).
+
+È buona norma, una volta finito di lavorare su un file aperto, usare il codice:
+```python
+f.close()
+```
+
+Per non incappare in possibili errori.
