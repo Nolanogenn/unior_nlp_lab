@@ -11,7 +11,7 @@ E poi importarla su python
 import nltk
 ```
 
-In questa lezione ci occuperemo nella pratica delle possibili fasi di processamento testuale, ovvero *rimozione di punteggiatura e stopword* e *tokenizzazione*. /
+In questa lezione ci occuperemo nella pratica delle possibili fasi di processamento testuale, ovvero *rimozione di punteggiatura e stop-word* e *tokenizzazione*. /
 **NB:** non è detto che queste fasi ci siano sempre in ogni progetto, né tantomeno che siano necessarie affinche il testo sia pronto per essere analizzato. Non sempre le stopword vengono eliminate; e allo stesso modo la semplice tokenizzazione non è sempre quello che ci serve, ma conviene migliorarla con strumenti che lavorano a livelli più bassi della singola parola, come l'algoritmo BPE.
 
 Prima di tutto caricare il corpus scelto su Python.
@@ -35,10 +35,11 @@ print(sentences)
 Il secondo tipo di tokenizzazione riguarda la suddivisione in lessemi. Nelle lingue che utilizzano lo spazio per dividere le parole è particolarmente facile effettuare questo tipo di suddivisione, anche senza librerie aggiuntive:
 ```python
 text = "Studiare all'Orientale mi fa riflettere sulle decisioni della mia vita"
-tokens = text.split(' ')
+tokens = text.split()
 #il comando sopra descritto accetta una stringa in input
 #e come otuput ha una lista degli elementi della stringa
-#divisi dal carattere tra parentesi
+#tra parentesi possiamo inserire il carattere su cui dividere la stringa
+#di default se non inseriamo nessun carattere il comando dividerà sugli spazi
 ```
 Notare che il codice sopra descritto non suddivide bene in parole. È necessario eliminare l'apostrofo e sostituirlo con uno spazio affinché la tokenizzazione sia completa.
 
@@ -70,7 +71,35 @@ frase_no_punctuation = frase_prova.transate(transformation)
 
 print(frase_no_punctuation)
 ```
+## Eliminazione delle stop-word
 
+L'eliminazione delle stop-word è essenziale per alcuni tipi di analisi testuale dove avere parole che si ripetono con troppa frequenza potrebbe creare rumore, come può essere il semplice calcolo della frequenza delle parole e degli n-grammi. 
+
+NLTK offre una lista di stop-word per diverse lingue che può essere poi utilizzata come filtro sul testo da modificare. È possibile modificare questo filtro utilizzando tutte le operazioni che si possono usare su una lista.
+
+```python
+import nltk
+from nltk.corpus import stopword
+
+stop_words = stopword.words('italian')
+#la stringa tra parentesi indica la lingua le cui stop-word vogliamo rimuovere
+
+print(stop_words)
+```
+Esistono diversi modi di applicare questo filtro a una stringa. Uno di questi modi verrà descritto di seguito:
+```python
+
+testo = "Questo è un testo di prova del corso di NLP"
+testo_no_stop_word = [] #definiamo una lista vuota che andremo a riempire con i token che non sono stop-word
+
+tokens = testo.split() #dividiamo la stringa in token
+
+for t in tokens:
+  if t not in stop_words: # la condizione è vera se il token NON è nella lista di stop-word
+    testo_no_stop_word.append(t)
+    
+print(test_no_stop_word)    
+```
 
 
 
