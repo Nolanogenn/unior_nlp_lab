@@ -101,6 +101,15 @@ for t in tokens:
 print(test_no_stop_word)    
 ```
 
+## Esercizio
+
+Caricato un corpus, dividerlo prima in frasi, dividere le frasi in token ed eliminare la punteggiatura.
+
+Calcolare:
+- quanti frasi ci sono nel corpus;
+- quanti token ci sono nel corpus;
+- quanti type ci sono nel corpus;
+- valore ttr in percentuale.
 
 
 
