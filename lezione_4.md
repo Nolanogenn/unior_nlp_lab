@@ -105,11 +105,11 @@ print(test_no_stop_word)
 
 Caricato un corpus, dividerlo prima in frasi, dividere le frasi in token ed eliminare la punteggiatura.
 
-Calcolare:
-- quanti frasi ci sono nel corpus;
-- quanti token ci sono nel corpus;
-- quanti type ci sono nel corpus;
-- valore ttr in percentuale.
+- Quanti frasi ci sono nel corpus?
+- Quanti token ci sono nel corpus?
+- Quanti type ci sono nel corpus?
+- Qual è il valore ttr?
+- **In media ogni frase da quanti token è composta?**
 
 
 
