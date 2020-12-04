@@ -31,7 +31,7 @@ Ovviamente, il prezzo da pagare è che bisogna imparare a utilizzare gli strumen
 
 ## Elementi fondamentali di NLP
 
-Su quali dati lavoriamo? Si tratta di dati linguistici, raccolti in un **corpus**, o in più **corpora**. I **corpora** possono essere di diverso tipo (monolingue, multilingue, paralleli...) e trattano gli argomenti più svariati. \
+Su quali dati lavoriamo? Si tratta di dati linguistici, raccolti in un **corpus**, o in più **corpora**. I **corpora** possono essere di diverso tipo (monolingue, multilingue, paralleli, annotato, *raw*...) e trattano gli argomenti più svariati. \
 Un corpus è solitamente composto da più frasi. Le frasi possono essere delimitate da segnalatori, come **<s>...</s>** o **<START>...<FINISH>**. Ogni frase è composta da più parole. Ma come si distinguono le parole? \
 È accettata la concezione che la parola venga definita come la **stringa tra due spazi**. Questo è il modo migliore per permettere a una macchina di comprendere il concetto di parola. Sotto questa forma, solitamente non si parla di parole ma di **token**. Si parla inoltre di **type** per indicare il numero di token diversi presenti in un corpus. \
 Questa definizione va bene per le lingue che usano gli spazi per dividere le parole, ma per quelle che non rientrano in questa categoria (ad esempio cinese e giapponese) servono algoritmi molto più complessi. Nel nostro caso questa definizione ci basta. \
