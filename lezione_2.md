@@ -18,10 +18,10 @@ print(x is y)
 #questi codici stamperanno SEMPRE True o False
 ```
 
-Un esempio più complicato è rappresentato dalle cosiddette **dichiarazioni condizionali** (***conditional statements***) che rappresentano un modo di controllare il flusso
-del codice che stiamo scrivendo / di controllare i dati a cui stiamo lavorando.
+Un'applicazione più profonda delle **condizioni logica** è rappresentata dalle cosiddette **dichiarazioni condizionali** (***conditional statements***) che rappresentano un modo di controllare il flusso del codice che stiamo scrivendo e quindi di controllare i dati su cui stiamo lavorando.
 
-L'idea alla base è di dare al codice il comando: fai x se la **condizione logica** che ti ho indicato è vera, fai y se è falsa.
+L'idea alla base è di dare alla macchina il comando: fai x se la **condizione logica** che ti ho indicato è vera, fai y se è falsa.
+
 **NB**  gli spazi sono **MOLTO** importanti in Python! Dopo un if **È NECESSARIO** indentare (ovvero: andare avanti di un tab). Il tasto *TAB* sulla tastiera serve proprio a questo!
 
 ```python
@@ -79,7 +79,7 @@ if b > a or b > c:
 
 ## Loop <a name='loop'></a>
 
-Un'idea centrale nella programmazione è l'idea di **loop** o **ciclo**, ovvero un comando che ci permette di dare alla macchina l'ordine: ripeti l'azione x. Ogni volta che l'azione viene ripetuta, si parla di **iterazione**.
+Un'idea centrale nella programmazione è il concetto di **loop** o **ciclo**, ovvero un comando che ci permette di dare alla macchina l'ordine: ripeti l'azione x per y volte. Ogni volta che l'azione viene ripetuta, si parla di **iterazione**.
 
 In Python esistono due tipi di **cicli**: ***while*** e ***for***. Vediamoli uno alla volta.
 
@@ -113,7 +113,7 @@ while i < 6:
 
 ### Ciclo For
 
-Il ciclo **for** permette di ripetere un'azione un determinato numero di volte (a differenza di while). Per far ciò, questo **loop** utilizza una determinata sequenza per le proprie iterazioni. 
+Il ciclo **for** permette di ripetere un'azione un determinato numero di volte (a differenza di **while**). Per far ciò, questo **loop** utilizza una determinata sequenza su cui itereare l'azione richiesta. 
 
 L'idea è dare alla macchina l'ordine: *per ogni elemento della sequenza, compi l'azione x*.
 
@@ -134,8 +134,8 @@ for lettera in parola:
   else:
     print(lettera, " è una consonante")
 
-###Notare che la variabile dell'elemento che andiamo a iterare (num, o lettera) può essere scelta liberamente
-###Basta ricordarsela!
+###Notare che la variabile dell'elemento che andiamo a iterare (num, o lettera) può essere scelta arbitrariamente
+###Basta ricordarsela successivamente!
 
 for x in range(6):
   print(x)
@@ -193,10 +193,10 @@ for parola in frase.split():
 else:
   output += '<FINE>'
 ```
-
+---
 ## csv e json <a name='csvjson'></a>
 
-Tra i diversi modi di conservare e utilizzare file di tipo linguistico, due sono quelli principalmente utilizzati: **.csv** e **.json**. All'interno del linguaggio di programmazione, questi prendono solitamente la forma di, rispettivamente: **matrici** e **dizionari**.
+Tra i diversi modi di conservare e utilizzare file di tipo linguistico, due sono quelli principalmente utilizzati: **.csv** e **.json**. All'interno di Python, questi prendono solitamente la forma di, rispettivamente: **matrici** e **dizionari**.
 
 - csv e matrici
 Un **csv** (**c**omma **s**eparated **v**alues) è un file testuale che rappresenta una tabella. Ad esempio, una tabella del tipo:
@@ -215,7 +215,7 @@ spend,1,0,1,0,0,0,0,0
 ```
 L'aspetto positivo dei **csv** è la loro facilità di creazione e la possibilità, che offrono, di poter essere utilizzati in diverse applicazioni e linguaggi di programmazione (ad esempio Python e sql). In realtà il nome è fuorviante perché il separatore (di base una virgola) può in realtà essere qualunque altro simbolo. A volte si trova il punto e virgola, o **quattro spazi** (ovvero un **tab**, simboleggiato da "\t"). In quest'ultimo caso si parla solitamente di **tsv**. 
 
-Esistono diversi modi di interpretare un file **csv** su Python (noi useremo la libreria *Pandas*), ma l'idea è generalmente di avere di fronte una **matrice mxn**, ovvero una *lista di liste tutte della stessa lunghezza*
+Esistono diversi modi di interpretare un file **csv** su Python (noi useremo la libreria *Pandas*, che usa la forma dati del **dataframe**), ma l'idea è generalmente di avere di fronte una **matrice mxn**, ovvero una *lista di liste tutte della stessa lunghezza*
 
 ```python
 
@@ -276,10 +276,14 @@ dizionario_marco = {"altezza" = 170,
 "colore_capelli" = None
 }
 
+print(dizionario_anna['altezza'], dizionario_marco['altezza'])
 print(dizionario_anna['altezza'] == dizionario_marco['altezza'])
+
 ```
-La struttura di un dizionario comprende quindi **chiavi** (**keys**) e **valori** (**values**), dove le **chiavi** sono gli elementi a sinistra delle assegnazioni e i #**valori** gli elementi a destra.\
-Per ogni **chiave** si può avere **un unico valore** e le **chiavi** non possono ripetersi.\
+La struttura di un dizionario comprende quindi **chiavi** (**keys**) e **valori** (**values**), dove le **chiavi** sono gli elementi a sinistra delle assegnazioni e i #**valori** gli elementi a destra.
+
+Per ogni **chiave** si può avere **un unico valore** e le **chiavi** non possono ripetersi nello stesso dizionario, poiché rappresentano gli identificatori dei valori.
+
 Un **valore** può essere rappresentato da un qualunque tipo di dato.
 ```python
 
