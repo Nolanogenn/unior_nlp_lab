@@ -18,11 +18,11 @@ print(x is y)
 #questi codici stamperanno SEMPRE True o False
 ```
 
-Un'applicazione più profonda delle **condizioni logica** è rappresentata dalle cosiddette **dichiarazioni condizionali** (***conditional statements***) che rappresentano un modo di controllare il flusso del codice che stiamo scrivendo e quindi di controllare i dati su cui stiamo lavorando.
+Un'applicazione più pratica delle **condizioni logica** è rappresentata dalle cosiddette **dichiarazioni condizionali** (***conditional statements***) che rappresentano un modo di controllare il flusso del codice che stiamo scrivendo.
 
 L'idea alla base è di dare alla macchina il comando: fai x se la **condizione logica** che ti ho indicato è vera, fai y se è falsa.
 
-**NB**  gli spazi sono **MOLTO** importanti in Python! Dopo un if **È NECESSARIO** indentare (ovvero: andare avanti di un tab). Il tasto *TAB* sulla tastiera serve proprio a questo!
+Prima di proseguire, occorre notare che su Python gli spazi sono importanti. Dopo determinati comandi è **necessario** indentare, ovvero mandare avanti di quattro spazi (un *tab*). Il tasto *TAB* sulla tastiera serve proprio a questo!
 
 ```python
 
@@ -35,6 +35,8 @@ else:
   print("a è maggiore di b!")
 
 ##NB: un if non indentato darà sempre errore
+if 1=0:
+print(False)
 ```
 Notare che il condizionale **else** NON è necessario su python: nel caso sia assente e la condizione sia falsa, il codice non farà nulla. In pratica, questo può essere esplicitato scrivendo:
 
@@ -79,7 +81,7 @@ if b > a or b > c:
 
 ## Loop <a name='loop'></a>
 
-Un'idea centrale nella programmazione è il concetto di **loop** o **ciclo**, ovvero un comando che ci permette di dare alla macchina l'ordine: ripeti l'azione x per y volte. Ogni volta che l'azione viene ripetuta, si parla di **iterazione**.
+Un'idea centrale nella programmazione è il concetto di **loop** o **ciclo**, ovvero un comando che ci permette di dare alla macchina il comando: *ripeti l'azione x per y volte*. Ogni volta che l'azione viene ripetuta, si parla di **iterazione**.
 
 In Python esistono due tipi di **cicli**: ***while*** e ***for***. Vediamoli uno alla volta.
 
@@ -93,13 +95,14 @@ i = 1
 while i < 6:
   print(i)
 
-###Questo codice stamperà la variabile i all'infinito, visto che 1 sarà sempre minore di 6
+### Questo codice stamperà la variabile i all'infinito, visto che 1 sarà sempre minore di 6
 
-###NB NOTARE LA DIFFERENZA CON:
+### NB NOTARE LA DIFFERENZA CON:
 
 i=1
 if i < 6:
   print(i)
+  
 ###
 
 i = 1
