@@ -50,15 +50,6 @@ I make no claim on ownership of these files, nor do I necessarily endorse the jo
 
 1. [German Recipes](https://www.kaggle.com/sterby/german-recipes-dataset) || **Formato:** json \
 **Descrizione:** This dataset contains 12190 german recipes with metadata crawled from chefkoch.de*.
-Each json document contains the following fields:
-- Ingredients: the ingredients of the recipe as array
-- Instructions: the instructions as free text
-- Name: the name of the recipe
-- Url: the source url
-- Day: the day where the recipe was created
-- Month: the month where the recipe was created
-- Year: the year where the recipe was created
-- Weekday: the weekday where the recipe was created 
 
 2. [Student reviews & recommendations of german universities](https://www.kaggle.com/longnguyen2306/germany-universities-reviews-and-recommendation) || **Formato:** csv \
 **Descrizione:** 220k+ reviews for German universities.
