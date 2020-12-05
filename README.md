@@ -1,11 +1,19 @@
 
 # Corpora
 
-1. [Inglese](#inglese)
-2. [Italiano](#italiano)
-3. [Tedesco](#tedesco)
-4. [Russo](#russo)
-4. [Multilingue](#multilingue)
+1. [Francese](#francese)
+2. [Inglese](#inglese)
+3. [Italiano](#italiano)
+4. [Tedesco](#tedesco)
+5. [Russo](#russo)
+6. [Multilingue](#multilingue)
+
+## Francese <a name="francese"></a>
+1. [French News Article](https://webhose.io/free-datasets/french-news-articles/) || **Formato:** json \\
+**Descrizione:** A collection of news article written in French
+
+2. [Insurance Reviews France](https://www.kaggle.com/fedi1996/insurance-reviews-france) || **Formato:** csv \\
+**Descrizione:** User reviews on mutual health insurance in France.
 
 ## Inglese <a name="inglese"></a>
 
@@ -43,8 +51,11 @@ I make no claim on ownership of these files, nor do I necessarily endorse the jo
 ## Italiano <a name="italiano"></a>
 
 1. [Hottest Italian Tweets](https://data.world/ondata/open-data-twitter-hot-posts/workspace/query?queryid=b409249c-17b8-4ccd-9166-dc3cf77f317d) || **Formato:** csv \
-**Descrizione:** An archive of the Twitter posts about open data with at least 10 retweets or 10 favorites
-**NB SERVE LOGGARE PER SCARICARLO (è possibile usare l'account google)**
+**Descrizione:** An archive of Twitter posts about open data with at least 10 retweets or 10 favorites
+**NB SERVE LOGGARE PER SCARICARLO (è possibile usare un account google)**
+
+2. [Italian News Articles](https://webhose.io/free-datasets/italian-news-articles/) || **Formato:** json \
+**Descrizione:** A collection of news article written in Italian
 
 
 ---
@@ -65,6 +76,8 @@ Each json document contains the following fields:
 2. [Student reviews & recommendations of german universities](https://www.kaggle.com/longnguyen2306/germany-universities-reviews-and-recommendation) || **Formato:** csv \
 **Descrizione:** 220k+ reviews for German universities.
 
+2. [German News Article](https://webhose.io/free-datasets/german-news-articles/) || **Formato:** json \
+**Descrizione:** A collection of news written in German
 ---
 ## Russo <a name="russo"></a>
 
@@ -82,4 +95,6 @@ The corpus of short texts in Russian on the basis of Twitter posts. Suitable for
 **Descrizione:** A set of manually aligned datasets in German, English and Turkish.
 
 3. [Japanese-English Bilingual Corpus](https://www.kaggle.com/team-ai/japaneseenglish-bilingual-corpus?select=readme.pdf) \
-**Descrizione:** A precise and large-scale corpus containing about 500,000 pairs of manually-translated sentences. 
+**Descrizione:** A precise and large-scale corpus containing about 500,000 pairs of manually-translated sentences.
+
+4. [English, Chinese and French proverbs](https://www.kaggle.com/bryanb/phrases-and-sayings) || **Formato:** csv \
