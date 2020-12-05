@@ -1,49 +1,85 @@
 # Intro al corso
 
 ## NLP?
+Con **Natural Language Processing** s'intede la dottrina che ha come obiettivo principale la comprensione da parte delle macchine del linguaggio umano. 
 
-Con **Natural Language Processing** s'intede la dottrina che comprende linguistica, informatica e machine learning che ha, come obiettivo principale, far sì che le macchine capiscano il linguaggio umano, ovvero che il linguaggio umano possa essere analizzato automaticamente da una macchina. Perché?\
-Perché la potenza di calcolo di una macchina è ben superiore alla potenza di calcolo di qualunque essere umano e può quindi compiere azioni su un numero di dati estremamente elevato. Tali azioni, inoltre, possono essere ripetute (teoricamente all'infinito) senza perdita di dati, e possono avvenire in remoto. \
+Alla base c'è una *fusione* di,tre domini: la linguistica, l'informatica e il machine learning. Ma perché è importante una macchina capisca il linguaggio umano?
+
+Il motivo principale è che la potenza di calcolo di una macchina è ben superiore alla potenza di calcolo di qualunque essere umano. È quindi possibile affidare alla macchina compiti estremamente ripetitivi con un numero di dati estremamente elevato. 
+
+Un computer può compiere azioni e ripetere compiti teoricamente all'infinito senza alcuna perdita di dati né di informazioni. 
+
 La ricerca in ambito NLP ha permesso lo sviluppo di una serie di applicazioni pratiche che trovano utilizzo nella vita quotidiana:
 
-- Correzione automatica
-- MT
-- Sentiment Analysis
-- QA / Chatbot
-- Filtri Spam
+- Correzione automatica;
+- MT (SMT / NMT);
+- Sentiment Analysis;
+- QA / Chatbot / Agenti Conversazionali;
+- Filtri Spam;
+- ...
 
-Nella pratica, ognuna di queste applicazioni può essere suddivisa in quelli che definiamo ***task***, ovvero problemi più piccoli e meglio definiti. Due task principali in cui si snoda tutto l'NLP sono il **Natural Language Understanding** e **Natural Language Generation**, ma, scendendo più nello speficifico, si possono definire una serie di ***task*** legati a diversi aspetti linguistici, come:
+Nella pratica, ognuna di queste applicazioni può essere suddivisa in quelli che definiamo ***task***, ovvero problemi più piccoli e meglio definiti.
 
-- tokenizzazione
-- lemmatizzazione
-- Minimum Edit Distance
-- ngrams
-- language models
-- classificatori
-- parsing
-- text
-- speech recognition
-- named entity recognition
-...
+Due *macrotask* in cui si può dividere l'NLP sono il **Natural Language Understanding** e **Natural Language Generation**, ma, scendendo più nello speficifico, si possono definire una serie di *microtask* legati a diversi aspetti linguistici e alla risoluzione di problematiche ben definite, come:
 
-Nonostante questi **task** possano essere risolti a mano, è molto più comodo ed efficiente risolverli utilizzando un computer. L'esistenza di molti software / servizi in cloud permette inoltre di affrontare questi problemi anche senza determiante conoscenze informatiche, ma l'utilizzo di linguaggi di programmazione ci offre maggiore libertà nei progetti. \
-Ovviamente, il prezzo da pagare è che bisogna imparare a utilizzare gli strumenti a nostra disposizione, non solo per quanto riguarda la teoria ma anche praticamente. In particolare, in questo corso ci soffermeremo sul linguaggio di programmazione **Python**, che viene solitamente usato allo stato dell'arte.
+- tokenizzazione;
+- lemmatizzazione;
+- calcolo della *Minimum Edit Distance*;
+- analisi di *ngrams*;
+- *language models*;
+- classificatori;
+- *parsing* (semantico e sintattico);
+- speech recognition;
+- named entity recognition;
+- ...
+
+Nonostante questi *microtask* possano essere risolti a mano da un esperto, è molto più comodo ed efficiente lasciarli risolvere a un computer. 
+
+Ad oggi l'esistenza di molti software / servizi in cloud permette inoltre di affrontare questi problemi anche senza determiante conoscenze informatiche, ma l'utilizzo di linguaggi di programmazione ci offre maggiore libertà e flessibilità nei progetti. 
+
+Ovviamente, il prezzo da pagare è che bisogna imparare a utilizzare gli strumenti a nostra disposizione, non solo per quanto riguarda la parte teorica ma anche l'applicazione pratica. Il rischio è di corrompere dati o fare analisi errate. Ma il gioco vale la candela, poiché queste pratiche sono alla base dello stato dell'arte in NLP.
+
+Tra gli strumenti possibili, in questo corso ci soffermeremo sull'utilizzo del linguaggio di programmazione **Python**, accademicamente accettato come il linguaggio più consono allo studio di dati di qualunque tipo. 
 
 ## Elementi fondamentali di NLP
 
-Su quali dati lavoriamo? Si tratta di dati linguistici, raccolti in un **corpus**, o in più **corpora**. I **corpora** possono essere di diverso tipo (monolingue, multilingue, paralleli, annotato, *raw*...) e trattano gli argomenti più svariati. \
-Un corpus è solitamente composto da più frasi. Le frasi possono essere delimitate da segnalatori, come **<s>...</s>** o **<START>...<FINISH>**. Ogni frase è composta da più parole. Ma come si distinguono le parole? \
-È accettata la concezione che la parola venga definita come la **stringa tra due spazi**. Questo è il modo migliore per permettere a una macchina di comprendere il concetto di parola. Sotto questa forma, solitamente non si parla di parole ma di **token**. Si parla inoltre di **type** per indicare il numero di token diversi presenti in un corpus. \
-Questa definizione va bene per le lingue che usano gli spazi per dividere le parole, ma per quelle che non rientrano in questa categoria (ad esempio cinese e giapponese) servono algoritmi molto più complessi. Nel nostro caso questa definizione ci basta. \
-Un corpus è quindi descritto come avente **N token** e un vocabolario composto da **V type**.\
-Un corpus può inoltre essere descritto dal numero di **lemmi** (ovvero la forma che compare nel dizionario di una determinata parola). \
-Un problema fondamentale nel creare un corpus è quello della **normalizzazione del testo**, ovvero della 'fissazione' delle caratteristiche di un testo affinché esso sia considerabile unitario nel suo complesso. \
+Su che tipo di dati lavoriamo?
+
+Si tratta di dati linguistici, raccolti in un **corpus**, o in più **corpora**. I **corpora** possono essere di diverso tipo (monolingue, multilingue, paralleli, annotati, *raw*...) e possono trattare gli argomenti più svariati. 
+
+Un corpus è solitamente composto da più frasi, le quali possono essere delimitate da segnalatori, come **\<s\>...\</s\>**, **\<STAR\T>...\<FINISH\>** o semplicemente dal capoverso **\n**. Ogni frase è a sua volta composta da più parole. Ma come distinguaimo le parole all'interno di una frase? Come fa un computer a capire cos'è una parola?
+
+È generalmente accettata la concezione che la parola venga definita come una **stringa di caratteri tra due spazi**. Sebbene questo sia il modo più comodo per permettere a una macchina di comprendere il concetto di parola, questa definizione non è abbastanza per le lingue che non usano spazi per dividere le parole (come ad esempio cinese e giapponese). In questi casi servono algoritmi molto più complessi, di cui però non ci occuperemo in questa sede.
+
+Sotto questa forma, solitamente si parla non di parole ma di **token** e **type**. Laddove con **type** si intendono le parole *diverse* presenti in un corpus, con **token** si intendono le parole *complessive* del corpus.
+
+Ad esempio, la stringa:
+```
+"Tre tigri contro tre tigri,\n
+tre tigri contro tre tigri".
+```
+Contiene 10 token, ma solo 3 type ("tre", "tigri", "contro").
+
+Un corpus è quindi descritto come avente **N token** e un vocabolario composto da **V type**. Il rapporto tra token e type in percentuale viene chiamato **ttr** e descrive la varietà linguistica di un corpus. Si calcola:
+
+```
+(num.type / num.token) * 100
+```
+
+Un corpus può inoltre essere descritto dal numero di **lemmi** (ovvero la forma che compare nel dizionario di una determinata parola). 
+
+Un problema fondamentale nella creazione un corpus è quello della **normalizzazione del testo**, ovvero della *fissazione* delle caratteristiche di un testo affinché esso sia considerabile unitario nel suo complesso o rispetto ad altri corpora. \
   In generale, la **normalizzazione** è la prima vera parte di processamento del testo, e comprende generalmente tre fasi/task:
-  1. Tokenizzazione
-  2. Normalizzazione delle parole
-  3. Segmentazione delle frasi
- Non esistono metodi fissi per effettuare le task sopra citate, per una serie di questioni. A volte può servire tokenizzare eliminando tutta la punteggiatura e mettendo il testo in **lowercase**, ma non sempre è bene farlo (come distinguere ***us*** e ***U.S.***?). A volte ci può interessare l'ordine delle parole nelle frasi, ma non è sempre così (**Bag of Words**). La seconda fase comprende, solitamente, un processo di lemmatizzazione/stemming. Ma questo può farci perdere delle informazioni importanti riguardo il testo. \
-  Bisogna sempre tenere ben in mente il progetto finale.
+  1. Tokenizzazione;
+  2. Normalizzazione delle parole;
+  3. Segmentazione delle frasi.
+ Non esistono metodi fissi per effettuare le task sopra citate, per una serie di questioni. 
+ 
+A volte può servire tokenizzare eliminando tutta la punteggiatura e mettere il testo in **lowercase**, ma non sempre è bene farlo (come distinguere poi ***us*** e ***U.S.***?). A volte ci può interessare l'ordine delle parole nelle frasi, ma non è sempre così (si veda ad esempio l'approccio **Bag of Words**).
+
+Anche normalizzando le parole, attraverso ad esempio un processo di lemmatizzazione/stemming si potrebbero perdere delle informazioni importanti riguardo il testo. 
+
+ Bisogna sempre tenere ben in mente il progetto finale.
   
 ## Intro Python
 
