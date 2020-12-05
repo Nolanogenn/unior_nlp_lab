@@ -1,6 +1,8 @@
-# Intro al corso
-
-## NLP?
+## Argomenti
+1. [NLP - definizione e applicazioni](#nlp)
+2. [Python](#python)
+---
+# NLP? <a name='nlp'></a>
 Con **Natural Language Processing** s'intede la dottrina che ha come obiettivo principale la comprensione da parte delle macchine del linguaggio umano. 
 
 Alla base c'è una *fusione* di,tre domini: la linguistica, l'informatica e il machine learning. Ma perché è importante una macchina capisca il linguaggio umano?
@@ -78,23 +80,43 @@ Un problema fondamentale nella creazione un corpus è quello della **normalizzaz
 A volte può servire tokenizzare eliminando tutta la punteggiatura e mettere il testo in **lowercase**, ma non sempre è bene farlo (come distinguere poi ***us*** e ***U.S.***?). A volte ci può interessare l'ordine delle parole nelle frasi, ma non è sempre così (si veda ad esempio l'approccio **Bag of Words**).
 
 Anche normalizzando le parole, attraverso ad esempio un processo di lemmatizzazione/stemming si potrebbero perdere delle informazioni importanti riguardo il testo. 
+---
+# Python <a name='python'></a>
 
- Bisogna sempre tenere ben in mente il progetto finale.
-  
-## Intro Python
+## Installazione
 
-### Installazione
+Vedi la [guida all'installazione di Python](https://github.com/Nolanogenn/unior_nlp_lab/blob/main/installare_python.md).
 
-Vedi la guida all'installazione di Python.
-
-### "Hello World"
+## "Hello World"
 
 ```python
 print('Hello World!')
 ```
 
-### Sintassi base
-- assegnazione variabili (singole e multiple)
+## Sintassi base
+- operazioni di base 
+  ```python
+  print(4+2)
+  print(7-2)
+  print(5*3)
+  print(48/4)
+  print(13%4)
+  print(7**2)
+  print(64//3)
+  ```
+
+- commenti al codice \
+Qualunque linea introdotta da cancelletto (#) non ha valore per il codice, ma viene usata per comunicare con chiunque altro userà il codice, o per definire determinate parti di codici lunghi. \
+```python
+#questa riga è un commento
+4+6
+```
+In questo corso i commenti verranno usati per spiegare parti di codice. 
+
+
+- assegnazione variabili (singole e multiple) \
+Si può assegnare a un'entità una *variabile*, con la quale potremmo poi in seguito lavorare.
+
 ```python
 prova_variabile = 1
 prova_variabile = 2
@@ -106,14 +128,14 @@ print(prova_variabile)
 type(prova_variabile)
 
 print(variabile_non_esistente)
+```
 
-###CONFRONTI TRA VARIABILI
+- condizioni logiche \
+Si definisce condizione logica un'espressione che ha come risultato un valore tra **vero** e **falso**. Questo tipo di valore (vero\falso) è detto **booleano**.
 
+```python
 x = 4
 y = 4.0
-
-
-###CONDIZIONI LOGICHE
 
 print(x == y)
 print(x != y)
@@ -123,8 +145,12 @@ print(x is y)
 
 ```
 
-- tipi di dati
-  - int & float
+- tipi di dati \
+Esistono diverse tipologie di dati processabili:
+
+  * int & float \
+  Rappresentano i numeri, in particolare **int** rappresenta i numeri interi e **float** i numeri decimali.
+  
   ```python
   x = 4
   k = 7
@@ -140,19 +166,10 @@ print(x is y)
   
   j = x + y
   print(type(j))
-  
-  ###OPERAZIONI
-  
-  addizione = x + y
-  sottrazione = x - y
-  moltiplicazione = x * y
-  divisione = x / y
-  modulus = x % y
-  potenza = x ** y
-  floor_division = x // y
-    
   ```
-  - list
+
+  * list \
+  Questo tipo di dati rappresenta una **lista** che contiene altri elementi. Una volta definita una lista, è possibile selezionarle gli elementi e modificarla.
   
    ```python
    x = [1,11,21,1211]
@@ -188,7 +205,8 @@ print(x is y)
    sort(x)
 
    ```
-  - str
+  * str \
+  Questo tipo di dati rappresenta una **stringa di caratteri stampabili**.
   ```python
   string_prova = "Questa è una stringa di testo"
 
@@ -213,15 +231,16 @@ print(x is y)
 
 ### Aprire e salvare file testuali 
 
-Nel caso ci trovassimo a lavorare con file in formato .txt, possiamo aprirli su python utilizzando il comando
+Nel caso ci trovassimo a lavorare con file in formato .txt, possiamo aprirli su Python utilizzando il comando
 
 ```python
 f = open("path", 'r')
 file_txt = f.read()
 ```
+
 Dove "path" è il percorso dove si trova il file (rispetto alla cartella in cui ci troviamo). Se quindi siamo già nella cartella in cui si trova il file, ci basterà inserire il nome di quest'ultimo.
 
-Una volta caricato in questo modo, il file viene trattato come se fosse una stringa. Ma questo non è sempre l'ideale, a volte è preferibile caricare il file diviso già per righe. Ad esempio, ogni riga potrebbe essere una frase che vogliamo analizzare separatamente. In questo caso il codice sarà:
+Una volta caricato in questo modo, il file viene trattato come se fosse una stringa. Ma questo non è sempre l'ideale, a volte è preferibile caricare il file diviso già per righe. Ad esempio, ogni riga potrebbe essere una frase che vogliamo analizzare separatamente, e in questo caso il codice sarà:
 
 ```python
 f = open("path", "r")
@@ -235,7 +254,9 @@ text_prova = "Ho perso la penna. La penna mi è caduta."
 with open("path", "w") as f:
   f.write(text_prova)
 ```
+
 Questo codice non farà altro che creare un file testuale in "path" e scrivere al suo interno le frasi "Ho perso la penna. La penna mi è caduta.". A volte ci basta questo processo, se non ci interessa mantenere una divisione in frasi per un'analisi successiva. Se invece volessimo salvare una lista di frasi in formato testuale, il codice da usare sarebbe il seguente:
+
 ```python
 lista_frasi = ['Ho perso la penna.', 'La penna mi è caduta.']
 with open("path", "w") as f:
@@ -243,6 +264,7 @@ with open("path", "w") as f:
     f.write(frase)
     f.write('\n')
 ```
+
 Questo codice:
 1. Apre un file bianco in "path";
 2. Fa un loop di tutte le frasi nella lista che abbiamo scelto (vedremo nella prossima lezione come funzionano i loop);
@@ -250,6 +272,7 @@ Questo codice:
 4. Alla fine della frase scrive '\n' (ovvero l'accapo in forma testuale).
 
 È buona norma, una volta finito di lavorare su un file aperto, usare il codice:
+
 ```python
 f.close()
 ```
