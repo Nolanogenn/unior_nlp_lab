@@ -154,12 +154,13 @@ Da quante frasi è composto il corpus caricato? Da quanti caratteri?
 
 Stampare la prima frase e l'ultima frase del corpus.
 
-Descrivere il corpus: \
-**Se csv**: \
+Descrivere brevemente il corpus: 
+
+**Se csv**: 
  - Da quali colonne è formato il corpus?
  - Quali sono le colonne che possono essere di interesse?
  
-**Se json:** \
+**Se json:** 
   - Quali chiavi sono presenti nel corpus?
   - Qual è la gerarchia delle chiavi?
   - Quali valori possono essere di interesse?
