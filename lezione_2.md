@@ -7,7 +7,7 @@
 
 ## If...else <a name='ifelse'></a>
 
-Abbiamo già mostrato le **condizioni logiche** utilizzabili in python:
+Abbiamo già mostrato alcune delle **condizioni logiche** utilizzabili in python:
 ```python
 print(x == y)
 print(x != y)
