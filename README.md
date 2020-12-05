@@ -19,23 +19,10 @@
 
 1. [Cornell Movie-Dialogs Corpus](cs.cornell.edu/~cristian/Cornell_Movie-Dialogs_Corpus.html) || **Formato:** txt\
 **Descrizione:** This corpus contains a large metadata-rich collection of fictional conversations extracted from raw movie scripts:
-- 220,579 conversational exchanges between 10,292 pairs of movie characters
-- involves 9,035 characters from 617 movies
-- in total 304,713 utterances
-- movie metadata included:
-    - genres
-    - release year
-    - IMDB rating
-    - number of IMDB votes
-    - IMDB rating
-- character metadata included:
-    - gender (for 3,774 characters)
-    - position on movie credits (3,321 characters)
 
 2. [Elsevier OA CC-BY Corpus](https://data.mendeley.com/datasets/zm33cdndxs/2) || **Formato:** json \
  **Descrizione:** This is a corpus of 40k (40,001) open access (OA) CC-BY articles from across Elsevier’s journals represent the first cross-discipline research of data at this scale to support NLP and ML research.
  
-
 3. [A dataset of English plaintext jokes](https://github.com/taivop/joke-dataset) || **Formato:** json \
  **Descrizione:** There are about 208 000 jokes in this database scraped from three sources.\
 I make no claim on ownership of these files, nor do I necessarily endorse the jokes in them. This dataset is provided for research purposes (see License section below).
