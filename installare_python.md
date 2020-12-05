@@ -9,9 +9,11 @@
 
 Per testare se l'installazione è andata a buon fine:
 1. Aprire il menù **Start** e scrivi nella barra della ricerca **cmd**. Aprire **Prompt dei Comandi**
-2. Scrivere **py** e premere Invio
+2. Scrivere **py** e premere Invio 
 3. Dovrebbe comparire la schermata mostrata di seguito:
 ![](https://i.ibb.co/827SRZK/py-successful.png)
+
+Nel caso non funzionasse, provare a scrivere **python** o **python3** e inviare.
 
 Ora bisogna controllare se anche **pip** (lo strumento utilizzato da Python per installare e organizzare le librerie esterne) è stato installato con successo.
 Notare innanzitutto la riga si apre con *>>>*. Significa che siamo su Python, e dobbiamo tornare al prompt dei comandi premendo **CTRL+Z** e poi **INVIO**. 
