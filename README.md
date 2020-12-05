@@ -9,10 +9,10 @@
 6. [Multilingue](#multilingue)
 
 ## Francese <a name="francese"></a>
-1. [French News Article](https://webhose.io/free-datasets/french-news-articles/) || **Formato:** json \\
+1. [French News Article](https://webhose.io/free-datasets/french-news-articles/) || **Formato:** json \
 **Descrizione:** A collection of news article written in French
 
-2. [Insurance Reviews France](https://www.kaggle.com/fedi1996/insurance-reviews-france) || **Formato:** csv \\
+2. [Insurance Reviews France](https://www.kaggle.com/fedi1996/insurance-reviews-france) || **Formato:** csv \
 **Descrizione:** User reviews on mutual health insurance in France.
 
 ## Inglese <a name="inglese"></a>
