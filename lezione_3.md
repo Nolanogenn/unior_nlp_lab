@@ -158,6 +158,7 @@ Descrivere il corpus: \
 **Se csv**: \
  - Da quali colonne è formato il corpus?
  - Quali sono le colonne che possono essere di interesse?
+ 
 **Se json:** \
   - Quali chiavi sono presenti nel corpus?
   - Qual è la gerarchia delle chiavi?
