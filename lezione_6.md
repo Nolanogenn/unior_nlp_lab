@@ -1,3 +1,3 @@
 # REGEX
 
-# Applicazioni NLP, accenni
+# Applicazioni NLP, accenni di machine learning
