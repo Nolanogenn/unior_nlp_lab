@@ -360,5 +360,3 @@ Un file **.json** è strutturalmente un dizionario:
 }
 ```
 
-**Esercizio**
-- scegliere un corpus tra quelli presenti sulla pagina del corso. In che formato è? Provare a caricarlo su Python.
