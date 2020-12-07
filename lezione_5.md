@@ -90,7 +90,7 @@ print(scored_trigram)
 
 ## Esercizi
 
-1. caricare e preprocessare il testo;
+1. caricare e preprocessare il testo usando il corpus scelto;
 2. mostrare le prime 10 parole per frequenza;
 3. stampare i primi 10 digrammi per pmi e raw_freq e confrontarli. Quali differenze ci sono?
 4. stampare i primi 10 trigrammi per pmi e raw_freq e confrontarli. Quali differenze ci sono?
