@@ -20,6 +20,9 @@ La ricerca in ambito NLP ha permesso lo sviluppo di una serie di applicazioni pr
 - Filtri Spam;
 - ...
 
+**Domanda**
+- quali altre applicazioni di NLP vi vengono in mente?
+
 Nella pratica, ognuna di queste applicazioni può essere suddivisa in quelli che definiamo ***task***, ovvero problemi più piccoli e meglio definiti.
 
 Due *macrotask* in cui si può dividere l'NLP sono il **Natural Language Understanding** e **Natural Language Generation**, ma, scendendo più nello speficifico, si possono definire una serie di *microtask* legati a diversi aspetti linguistici e alla risoluzione di problematiche ben definite, come:
@@ -35,6 +38,9 @@ Due *macrotask* in cui si può dividere l'NLP sono il **Natural Language Underst
 - named entity recognition;
 - ...
 
+**Domanda**
+- ci sono altri task che vi vengono in mente?
+
 Nonostante questi *microtask* possano essere risolti a mano da un esperto, è molto più comodo ed efficiente lasciarli risolvere a un computer. 
 
 Ad oggi l'esistenza di molti software / servizi in cloud permette inoltre di affrontare questi problemi anche senza determiante conoscenze informatiche, ma l'utilizzo di linguaggi di programmazione ci offre maggiore libertà e flessibilità nei progetti. 
@@ -45,9 +51,7 @@ Tra gli strumenti possibili, in questo corso ci soffermeremo sull'utilizzo del l
 
 ## Elementi fondamentali di NLP
 
-Su che tipo di dati lavoriamo?
-
-Si tratta di dati linguistici, raccolti in un **corpus**, o in più **corpora**. I **corpora** possono essere di diverso tipo (monolingue, multilingue, paralleli, annotati, *raw*...) e possono trattare gli argomenti più svariati. 
+I dati utilizzati in NLP sono dati linguistici solitamente raccolti in un **corpus**, o in più **corpora**. I **corpora** possono essere di diverso tipo (monolingue, multilingue, paralleli, annotati, *raw*...) e possono trattare gli argomenti più svariati. 
 
 Un corpus è solitamente composto da più frasi, le quali possono essere delimitate da segnalatori, come **\<s\>...\</s\>**, **\<STAR\T>...\<FINISH\>** o semplicemente dal capoverso **\n**. Ogni frase è a sua volta composta da più parole. Ma come distinguaimo le parole all'interno di una frase? Come fa un computer a capire cos'è una parola?
 
@@ -70,16 +74,22 @@ Un corpus è quindi descritto come avente **N token** e un vocabolario composto 
 
 Un corpus può inoltre essere descritto dal numero di **lemmi** (ovvero la forma che compare nel dizionario di una determinata parola). 
 
-Un problema fondamentale nella creazione un corpus è quello della **normalizzazione del testo**, ovvero della *fissazione* delle caratteristiche di un testo affinché esso sia considerabile unitario nel suo complesso o rispetto ad altri corpora. \
+Un problema fondamentale nella creazione un corpus è quello della **preprocessamento testuale**, spesso legato a una **normalizzazione**, ovvero *fissazione* delle caratteristiche di un testo affinché esso sia considerabile unitario nel suo complesso o rispetto ad altri corpora. \
   In generale, la **normalizzazione** è la prima vera parte di processamento del testo, e comprende generalmente tre fasi/task:
-  1. Tokenizzazione;
-  2. Normalizzazione delle parole;
-  3. Segmentazione delle frasi.
+  1. tokenizzazione;
+  2. normalizzazione delle parole (resa in minuscolo, lemmatizzazione,...);
+  3. segmentazione delle frasi.
  Non esistono metodi fissi per effettuare le task sopra citate, per una serie di questioni. 
  
 A volte può servire tokenizzare eliminando tutta la punteggiatura e mettere il testo in **lowercase**, ma non sempre è bene farlo (come distinguere poi ***us*** e ***U.S.***?). A volte ci può interessare l'ordine delle parole nelle frasi, ma non è sempre così (si veda ad esempio l'approccio **Bag of Words**).
 
-Anche normalizzando le parole, attraverso ad esempio un processo di lemmatizzazione/stemming si potrebbero perdere delle informazioni importanti riguardo il testo. 
+Anche normalizzando le parole, attraverso ad esempio un processo di lemmatizzazione/stemming si potrebbero perdere delle informazioni importanti riguardo il testo.
+
+**Domande**
+- quale può essere una regola per lemmatizzare i verbi in italiano?
+
+**NB: nonostante non facciano parte di questo corso, le espressioni regolari (regex) sono un ottimo strumento per processare i testi. Nel file dei materiali si trova un ottimo tutorial.**
+
 ---
 # Python <a name='python'></a>
 
