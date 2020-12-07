@@ -1,4 +1,5 @@
 1.[Windows](#windows)
+2.[Mac OS](#mac)
 
 ## Windows <a name="windows"></a>
 
@@ -31,7 +32,7 @@ per scaricare le librerie su Python. Aspettare che finisca l'installazione.
 
 **Ben fatto!**
 
-# Testare i codici
+### Testare i codici
 
 1. Aprire il menù **Start** e scrivi nella barra della ricerca **cmd**. Aprire **Prompt dei Comandi**
 2. Scrivere **py** e premere Invio
@@ -39,7 +40,7 @@ per scaricare le librerie su Python. Aspettare che finisca l'installazione.
 
 Questo strumento è utile per testare piccole parti di codice, ma non permette di salvare o modificare il codice.
 
-# Creare un foglio Notebook su cui lavorare
+### Creare un foglio Notebook su cui lavorare
 
 1. Aprire il menù **Start** e scrivi nella barra della ricerca **cmd**. Aprire **Prompt dei Comandi**
 2. Srivere **jupyter lab** e premere Invio
@@ -47,3 +48,5 @@ Questo strumento è utile per testare piccole parti di codice, ma non permette d
 4. Creare un **notebook** Python 3
 
 Oltre a offrire un'interfaccia grafica, JupyterLab permette di salvare il codice e di modificarlo in caso di errori. 
+
+## Mac OS <a name="mac"></a>
