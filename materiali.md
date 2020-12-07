@@ -1,3 +1,5 @@
+**NB: I materiali qui presenti non sono necessari al fine del corso, ma sono materiale aggiuntivo con cui approfondire l'ambito dell'NLP**
+
 ### NLP
 - [NLP 2012](https://www.youtube.com/watch?v=zQ6gzQ5YZ8o&list=PLoROMvodv4rOFZnDyrlW3-nI7tMLtmiJZ&ab_channel=stanfordonline) \
 Corso del 2012 di NLP presso l'Università di Stanford. Essendo del 2012 è abbastanza datato, ma è utile come base.
