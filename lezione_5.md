@@ -1,4 +1,4 @@
-# Frequenza delle parole e delle collocazioni
+# Frequenza delle parole e n-grammi
 
 # Distribuzione di frequenza delle parole 
 
