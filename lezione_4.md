@@ -109,7 +109,7 @@ Caricato un corpus, dividerlo prima in frasi, dividere le frasi in token ed elim
 - Quanti token ci sono nel corpus?
 - Quanti type ci sono nel corpus?
 - Qual è il valore ttr?
-- **In media ogni frase da quanti token è composta?**
+- **Bonus**: In media ogni frase da quanti token è composta?
 
 
 
