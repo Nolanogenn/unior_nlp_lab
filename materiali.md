@@ -6,7 +6,7 @@ Corso del 2012 di NLP presso l'Università di Stanford. Essendo del 2012 è abba
 - [NLP in Python](https://www.youtube.com/watch?v=xvqsFTUsOmc&ab_channel=PyOhio)\
 Video sull'utilizzo di Python per NLP
 - [Foundations of Statistical NLP](https://www.cs.vassar.edu/~cs366/docs/Manning_Schuetze_StatisticalNLP.pdf)\
-Basi di statistica per NLP.
+Libro che esplora l'NLP. Il **secondo capitolo** è particolarmente utile per avere basi matematiche.
 - [Speech and Language Processing](https://web.stanford.edu/~jurafsky/slp3/ed3book.pdf)\
 PDF quasi completo che copre quasi per intero le basi dell'NLP con diverse applicazioni. Ottimo per iniziare, anche se presume alcune basi di statistica.
 
