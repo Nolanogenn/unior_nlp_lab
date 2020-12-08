@@ -3,7 +3,7 @@
 ### NLP
 - [NLP 2012](https://www.youtube.com/watch?v=zQ6gzQ5YZ8o&list=PLoROMvodv4rOFZnDyrlW3-nI7tMLtmiJZ&ab_channel=stanfordonline) \
 Corso del 2012 di NLP presso l'Università di Stanford. Essendo del 2012 è abbastanza datato, ma è utile come base.
--[NLP in Python](https://www.youtube.com/watch?v=xvqsFTUsOmc&ab_channel=PyOhio)\
+- [NLP in Python](https://www.youtube.com/watch?v=xvqsFTUsOmc&ab_channel=PyOhio)\
 Video sull'utilizzo di Python per NLP
 - [Foundations of Statistical NLP](https://www.cs.vassar.edu/~cs366/docs/Manning_Schuetze_StatisticalNLP.pdf)\
 Basi di statistica per NLP.
