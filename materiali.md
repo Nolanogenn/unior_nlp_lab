@@ -27,4 +27,4 @@ Sito per testare le Espressioni Regolari.
 
 ### Dual Boot
 - [How to dual-boot Linux and Windows](https://opensource.com/article/18/5/dual-boot-linux)\
-Guida su come installare Windows e Linux sullo stesso sistema operativo.
+Guida su come installare Windows e Linux sullo stesso computer.
