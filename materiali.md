@@ -12,7 +12,7 @@ PDF quasi completo che copre quasi per intero le basi dell'NLP con diverse appli
 
 
 ### NLTK
-- [NLP with Python- Analyzing Text with the Natural Language Toolkit](https://www.nltk.org/book/)
+- [NLP with Python- Analyzing Text with the Natural Language Toolkit](https://www.nltk.org/book/) \
 Sito che va molto a fondo sull'uso di NLTK. Le lezioni da 1-4 sono molto utili come base per iniziare a lavorare in maniera autonoma.
 
 ### Python
