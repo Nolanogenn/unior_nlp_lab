@@ -17,14 +17,14 @@ Sito che va molto a fondo sull'uso di NLTK. Le lezioni da 1-4 sono molto utili c
 
 ### Python
 - [Automate the Boring Stuffi with Python](https://automatetheboringstuff.com/)\
-Studio di Python per tutte le occasioni.
+Studio di Python per tutti gli usi.
 
 ### Espressioni Regolari
 - [Tutorial Regex](https://regexone.com/)\
-Sito per imparare a usare le Espressioni Regolari
+Sito per imparare a usare le Espressioni Regolari.
 - [Regex101](https://regex101.com/)\
-Sito per testare le Espressioni Regolari
+Sito per testare le Espressioni Regolari.
 
 ### Dual Boot
 - [How to dual-boot Linux and Windows](https://opensource.com/article/18/5/dual-boot-linux)\
-Guida su come installare Windows e Linux sullo stesso sistema operativo
+Guida su come installare Windows e Linux sullo stesso sistema operativo.
