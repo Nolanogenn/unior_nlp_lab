@@ -48,11 +48,11 @@ Esistono diverse soluzioni a entrambi i problemi. Iniziamo a vedere come ampliar
 ***You shall know a word by the company it keeps.*** \
 -John Rupert Firt
 
-Un **n-gramma** è definito come una sequenza di n elementi. Nel nostro caso, quindi, si tratterà di una sequenza di n parole, e si chiamerà **digramma** (*bigram*) con n=2 o **trigramma** (*trigram*) con n=3. Con n > 3 si parlerà semplicemente di n-gramma. 
+Un **n-gramma** è definito come una sequenza di n elementi. Nel nostro caso, quindi, si tratterà di una sequenza di n parole, e si chiamerà **digramma** (*bigram*) con n=2 o **trigramma** (*trigram*) con n=3. In questa sede ci occuperemo di digrammi e trigrammi, poiché maggiormente utilizzati negli studi linguistici. 
 
-Il concetto è dunque quello di utilizzare come unità di analisi non la parola ma un'unità più grande, comprendendo quindi tutte le combinazioni di parole che appaiono insieme.
+Il concetto è dunque quello di utilizzare come unità di analisi non la parola, ma tutte le combinazioni di parole che appaiono vicine all'interno del corpus.
 
-Anche in questo caso, possiamo utilizzare NLTK.
+Anche in questo caso, possiamo utilizzare degli strumenti offerti da NLTK.
 
 ```python
 
