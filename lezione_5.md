@@ -35,7 +35,7 @@ print(fdist.most_common(50))
 
 **Domande:** 
 1. Come possiamo migliorare i risultati? 
-2. Come possiamo stampare in una forma meglio leggibile i token più frequenti?
+2. Come possiamo stampare in una forma più leggibile i token più frequenti?
 
 Ci sono diversi problemi però con il metodo illustrato. Un primo problema riguarda il tipo di frequenza utilizzato: 
 - il conteggio puro delle parole non è abbastanza per cogliere la differenza tra testi. Un testo con un maggior numero di token, infatti, avrà sempre un'occorrenza maggiore delle parole più frequenti. Non per questo esse sono *discriminative*;
