@@ -45,7 +45,8 @@ import numpy as np
 ```
 Ma ciò non toglie che è possibile importare una libreria utilizzando un *alias* arbitrario. Questo significa anche che dobbiamo stare attenti agli *alias* scelti!
 In questa lezione vedremo i comandi relativi alle due librerie **json** e **pandas** per importare database.
-**NB: creare notebook su cui testare i comandi successivi**
+
+**NB: Per testare i comandi successivi è bene creare un notebook python3.**
 
 # Pandas
 
