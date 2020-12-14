@@ -11,12 +11,13 @@ E poi importarla su python
 import nltk
 ```
 
-In questa lezione ci occuperemo nella pratica delle possibili fasi di processamento testuale, ovvero *rimozione di punteggiatura e stop-word* e *tokenizzazione*. /
-**NB:** non è detto che queste fasi ci siano sempre in ogni progetto, né tantomeno che siano necessarie affinche il testo sia pronto per essere analizzato. Non sempre le stopword vengono eliminate; e allo stesso modo la semplice tokenizzazione non è sempre quello che ci serve, ma conviene migliorarla con strumenti che lavorano a livelli più bassi della singola parola, come l'algoritmo BPE.
+In questa lezione ci occuperemo nella pratica delle possibili fasi di processamento testuale, ovvero *rimozione di punteggiatura e stop-word* e *tokenizzazione*.
+
+**NB:** non è detto che queste fasi ci siano sempre in ogni progetto, né tantomeno che siano necessarie affinche il testo sia pronto per essere analizzato. Ad esempio non sempre le stopword vengono eliminate; e allo stesso modo una semplice tokenizzazione non è sempre quello che ci serve, ma alle volte c'è bisogno di "migliorarla" con strumenti che lavorano a livelli più bassi della singola parola, come ad esempio l'algoritmo BPE.
 
 Prima di tutto caricare il corpus scelto su Python.
 
-Una volta fatto ciò, testiamo gli strumenti sulle singole frasi prima di utilizzarle su tutto il progetto.
+Una volta fatto ciò, testiamo gli strumenti sulle singole frasi prima di utilizzarle su tutto il progetto. Assegnamo quindi una variabile a una frase arbitrariamente scelta dal corpus.
 
 ## Tokenizzazione
 
