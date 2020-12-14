@@ -147,21 +147,18 @@ prova_json.keys()
 ---
 # Esercizio
 
-Scegliere un corpus tra quelli presenti nel README.md della pagina del corso. Caricarlo su Python. 
+- Scegliere un corpus tra quelli presenti nel README.md della pagina del corso e scaricarlo. 
+- Caricare il corpus su Python prima sotto forma di stringa unica e poi come lista di elementi testuali.
 
-Provare poi a caricarlo come stringa unica e poi come lista di frasi.
+- Da quanti elementi testuali è composto il corpus caricato? Da quanti caratteri?
+- Stampare due frasi esemplificative dal corpus.
 
-Da quante frasi è composto il corpus caricato? Da quanti caratteri?
-
-Stampare la prima frase e l'ultima frase del corpus.
-
-Descrivere brevemente il corpus: 
-
-**Se csv**: 
- - Da quali colonne è formato il corpus?
- - Quali sono le colonne che possono essere di interesse?
+Descrivere brevemente il corpus: \
+**Se il corpus è in formato csv**: 
+ 1. Da quali colonne è formato il corpus?
+ 2. Quali sono le colonne che possono essere di interesse? 
  
-**Se json:** 
-  - Quali chiavi sono presenti nel corpus?
-  - Qual è la gerarchia delle chiavi?
-  - Quali valori possono essere di interesse?
+**Se il corpus è in formato json:** 
+  1. Quali chiavi sono presenti nel corpus?
+  1. Qual è la gerarchia delle chiavi?
+  1. Quali valori possono essere di interesse?
