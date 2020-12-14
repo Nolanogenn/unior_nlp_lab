@@ -20,7 +20,7 @@ Per installare una libreria si utilizza lo strumento **pip**, già utilizzato pe
 
 Prima di proseguire, seguendo le istruzioni installiamo le librerie **pandas** e **nltk**.
 
-**NB: A causa di un bug su windows, prima di poter utilizzare nltk bisogna anche installare la versione 1.19.3 della libreria numpy. si può fare utilizzando il seguente codice:**
+**NB: A causa di un bug su windows, prima di poter utilizzare nltk bisogna anche installare la versione 1.19.3 della libreria numpy. Si può fare utilizzando il seguente codice:**
 ***- pip install numpy==1.19.3***
 
 # Importare librerie
