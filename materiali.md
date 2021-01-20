@@ -16,7 +16,7 @@ PDF quasi completo che copre quasi per intero le basi dell'NLP con diverse appli
 Sito che va molto a fondo sull'uso di NLTK. Le lezioni da 1-4 sono molto utili come base per iniziare a lavorare in maniera autonoma.
 
 ### Python
-- [Automate the Boring Stuffi with Python](https://automatetheboringstuff.com/)\
+- [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/)\
 Studio di Python per tutti gli usi.
 
 ### Espressioni Regolari
