@@ -1,5 +1,5 @@
-1.[Windows](#windows)
-2.[Mac OS](#mac)
+1. [Windows](#windows)
+2. [Mac OS](#mac)
 
 ## Windows <a name="windows"></a>
 
