@@ -53,7 +53,7 @@ Tra gli strumenti possibili, in questo corso ci soffermeremo sull'utilizzo del l
 
 I dati utilizzati in NLP sono dati linguistici solitamente raccolti in un **corpus**, o in più **corpora**. I **corpora** possono essere di diverso tipo (monolingue, multilingue, paralleli, annotati, *raw*...) e possono trattare gli argomenti più svariati. 
 
-Un corpus è solitamente composto da più frasi, le quali possono essere delimitate da segnalatori, come **\<s\>...\</s\>**, **\<STAR\T>...\<FINISH\>** o semplicemente dal capoverso **\n**. Ogni frase è a sua volta composta da più parole. Ma come distinguaimo le parole all'interno di una frase? Come fa un computer a capire cos'è una parola?
+Un corpus è solitamente composto da più frasi, le quali possono essere delimitate da segnalatori, come **\<s\>...\</s\>**, **\<START>...\<FINISH\>** o semplicemente dal capoverso **\n**. Ogni frase è a sua volta composta da più parole. Ma come distinguaimo le parole all'interno di una frase? Come fa un computer a capire cos'è una parola?
 
 È generalmente accettata la concezione che la parola venga definita come una **stringa di caratteri tra due spazi**. Sebbene questo sia il modo più comodo per permettere a una macchina di comprendere il concetto di parola, questa definizione non è abbastanza per le lingue che non usano spazi per dividere le parole (come ad esempio cinese e giapponese). In questi casi servono algoritmi molto più complessi, di cui però non ci occuperemo in questa sede.
 
